@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<title>JSF Tutorial!</title>
+</head>
+
+<body>
+
+
+	<h2>Country</h2>
+	<h:form>
+      Enter Country : <h:inputText value="#{country.countryPojo.country_name}"
+			id="name" name="name"></h:inputText>
+		<h:commandButton value="Add" action="#{country.add_Country}"></h:commandButton>
+	</h:form>
+
+</body>
+</html>
